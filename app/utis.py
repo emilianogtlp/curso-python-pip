@@ -22,6 +22,7 @@ def get_percentage(data):
     values = result.values()
     return labels, values
 
+
 def population_by_country(data,country):
     result = list(filter(lambda item:item['Country/Territory'] == country,data))
     return result
