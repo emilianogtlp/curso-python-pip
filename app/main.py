@@ -21,5 +21,4 @@ def pie():
     charts.generate_pie_chart(labels,values)
 
 if __name__ == '__main__':
-    pie()
     run()
