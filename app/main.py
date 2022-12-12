@@ -5,12 +5,12 @@ import pandas as pd
 
 def run():
     '''
-    data = read_csv.read_csv('/Users/emilianogtlp/Documents/cursos_platzi/py-proyect/app/world_population.csv')
+    data = read_csv.read_csv('./world_population.csv')
     country = input("Teclee el nombre del pais: ")
     
     '''
 
-    df = pd.read_csv('/Users/emilianogtlp/Documents/cursos_platzi/py-proyect/app/world_population.csv')
+    df = pd.read_csv('./world_population.csv')
     df = df[df['Continent']=='South America']
 
     countries = df['Country/Territory'].values
@@ -29,7 +29,7 @@ def run():
 
 
 def pie():
-    data = read_csv.read_csv('/Users/emilianogtlp/Documents/cursos_platzi/py-proyect/app/world_population.csv')
+    data = read_csv.read_csv('./world_population.csv')
     labels, values = utis.get_percentage(data)
 '''
 
